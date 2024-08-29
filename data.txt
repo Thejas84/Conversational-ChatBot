@@ -1,0 +1,232 @@
+Breadth-First Search (BFS) is an algorithm used for traversing or searching tree or graph data structures  
+It explores all the vertices of a graph in breadthward motion,
+that is  it visits all the vertices at the same level before moving on to the next level
+BFS is often used to find the shortest path in an unweighted graph
+Here's a step-by-step explanation of the BFS algorithm:
+
+BFS Algorithm:
+Initialization:
+
+1:Create a queue to keep track of vertices to visit
+2:Create a boolean array or set to mark visited vertices
+3:Starting Node:
+	Enqueue the starting node into the queue
+	Mark the starting node as visited
+4:Explore Neighbors:
+	While the queue is not empty:
+	Dequeue a vertex from the queue (let's call it current_vertex)
+	Process the current_vertex (print it or perform any desired operation)
+	Enqueue all unvisited neighbors of the current_vertex
+	Mark each visited neighbor as visited
+5:Termination:
+	Continue this process until the queue is empty.
+
+
+Your Username is guest1 or lab1 or msrit for the computer.
+Your password is lab1cse for username as guest1 or lab1,   
+Your password is ritcse/cse1234 for username as msrit.
+
+
+Servlet steps to run
+1:Download  and install Tomcat software (exe file, present eclipse version compatible)
+2:Open a terminal and start eclipse
+3:$ eclipse
+4:Create Dynamic Web Project
+	Select from the menu File --> New --> Dynamic Web Project
+5:Enter "type name of project" as the project name and Keep rest of the settings as it is as
+6:than select the target Run time as per your requirement and click on finish button
+7:Create Servlet Class
+	Select from the menu File --> New --> Servlet
+8:Write "HelloWorld" in the 'Class Name' field  Click 'Next' button
+9:Click 'Finish' button
+
+Eclipse will generate a Servlet class based on the configuration / input we provided in the previous steps 
+and open the same in the Java Editor
+10:Write Custom Code.
+
+
+
+JDBC steps to run 
+1:Download XAMPP from Apache Friends and install in E:\drive
+2:Open XAMPP Control Panel and start Apache and Mysql
+3:Open your web browser and type in: http://localhost, you will get welcome to xampp in your browser
+4:Click on phpMyAdmin to open and  Create database and table and enter few data
+5:Download Java MySQL Connector ‘mysql-connector-java-5.1.34-bin.jar’ and keep it on the desktop (Download xampp-mysql version compatible jar file)
+6:Create a Java project in Eclipse IDE
+	Open Eclipse IDE Create a new Java Project and name it as “mydbproj”
+7:Configure JDBC driver in Eclipse IDE
+	You need to add the downloaded Java MySQL Connector JAR in client project’s classpath
+	To do this, right click on your Java Project (mydbproj) -> Properties -> Buildpath -> Configure Buildpath-> Libraries -> Add External JAR-> Classpath and select “mysql-connector-java-5.1.34-bin.jar” JAR file
+8:Set up a simple database program
+import java#sql*;
+public class JdbcExample {
+
+    public static void main(String args[]) {
+        Connection con = null;
+        try {
+            Class#forName("com#mysql#jdbc#Driver");
+            con = DriverManager#getConnection("jdbc:mysql://localhost:3306/mydb", "root", "");
+            if (!con#isClosed())
+                System#out#println("Successfully connected to MySQL server");
+        } catch(Exception e) {
+            System#err#println("Exception: " + e#getMessage());
+        } finally {
+            try {
+                if (con != null)
+                    con#close();
+            } catch(SQLException e) {}
+        }
+    }}
+(Note:in the above code replace # with dot symbol)
+9 Run the program  ->click on Java file -> RunAs-> Java Application You will get the following output
+              
+		Successfully connected to MySQL server.
+
+
+
+STEPS TO CONFIGURE JDBC_SERVLET_JSP USING ECLIPSE IDE
+
+1: Download Mysql-Connector Jar (respective MySQL version) file 
+2: Copy Mysql-connector jar file to apache-tomcat/lib
+3: Open Browser ->http://localhost and click on phpMyAdmin
+4: Create a database Create table and insert 5 rows to the table
+5: Follow the steps to create a servlet or JSP
+6: Type the SERVLET program and execute.
+
+steps for phpMyAdmin Tutorial
+1: Open Browser ->http://localhost and click on phpMyAdmin as shown below
+2: lick on Databases->Create database->Create mydb database
+3: Click on Create table to create table stud1 inside mydb with 2 columns and click on-> Go
+4: Create two attributes USN and Name and click on Save  
+5: Click in Insert to insert data into the table
+6: Enter two rows of data into the table and click on Go.
+
+
+Eligibility creteria for BE
+
+A candidate who has passed 10 + 2 pattern of examination (equivalent to the two year Pre University in Karnataka) with 
+Physics and Mathematics as compulsory subjects along with Chemistry/ Biotechnology/ Biology/ Computer Science/ Electronics as optional 
+subjects in the qualifying examination is eligible to pursue an undergraduate degree in engineering at MSRIT
+The eligibility for admission is 45% in case of General Category and 40% marks in the qualifying examination in case of SC/ST, 
+Category-1 and OBC Category candidates
+The marks obtained by the candidate in Biotechnology/ Biology/ Computer Science/ Electronics in the 
+qualifying examination will be considered in the place of Chemistry in case the marks obtained in Chemistry is less for 
+the required aggregate percentage for the purpose of determination of eligibility 
+(and not for the purpose of determination of rank, in respect of engineering/technology courses)
+Entrance Exam: KEA / COMEDK.
+
+Eligibility creteria for architecture 
+A Student who has passed 10 + 2 pattern of examination (equivalent to the two year Pre-university in Karnataka)
+Admission to Five year BArch, Course with 50% marks in Physics, Chemistry and Mathematics and also 50% marks in aggregate at 10+2 level of examination 
+and English is one of the Language
+“No student shall be admitted to the architecture course unless he / she has passed an 
+examination at the end of the 10 + 2 scheme of examination with 50% marks in Physics, 
+Chemistry and Mathematics and also 50% marks in aggregate of the 10 + 2 level examination”
+This provided that the student should also appear and secure a minimum of 40% marks in NATA
+(Including SC / ST, Category-1, and OBC Category candidates) conducted by the Council of Architecture
+ NATA TO BE HELD ON 14-April-2019 and 07-July-2019.
+ 
+
+Documents Required For Booking
+Employment certificate of Father / Mother from the employer stating working from to till date (Minimum 5 year of service is compulsory) 
+for students taking admission under NRI quota
+Valid pass port and Visa copies of parent and student (if student studying in India, passport and visa copy not required) Qualifying marks sheet of student
+10th standard +12th standard Marks Sheet
+Letter from Indian embassy in proof of NRI status
+RP (Residential Permit) for Foreign students
+Demand Draft should be made in dollars in favor of M S Ramaiah Institute of Technology, Bangalore
+Contact Admission Section on 080-23607902 and e-mail admn@msrit#edu for more details.
+
+
+Fees payment URL:
+https://feehive#bankofbaroda#co#in/FeeHiveWeb/FeeHive/Login/MSRITEXAM
+
+Please follow the instructions below to pay fee for SEE
+
+Online Payments : Through Gateway
+
+This URL can be best experienced in Mozilla Firefox browser 
+
+We are facing session expired global issue in latest Google chrome versions, even though the students get
+"session expired error" payment will be updated to success/failed within 15 minutes and they can download the receipt
+Advice the students not to pay again and again for the same installments on the same day
+Always ensure to check the receipt is generated or not before proceeding to pay again for the same installments
+Session expired error message in the portal "Your Session has been Expired/No Valid Session found! Please note: If this error occurred while doing
+a payment, please wait for 15 minutes and check the payment history before proceeding with a new payment"
+Duplicate payments will lead to charge back issues, so the students are advised not to pay more than once
+
+Offline Payments : Not through Payment Gateway
+
+Students should transfer to their SID and NEW IFSC code in case of NEFT/RTGS/IMPS payments New  IFSC is BARB0VJMSRI
+Cheque and DD payments receipts will have to be updated manually, hence you can avoid these payment modes
+In case of IMPS transactions, receipt will be available only on next working day before 12 PM.
+
+
+WELL-POSED LEARNING PROBLEMS
+Definition: A computer program is said to learn from experience E with respect
+to some class of tasks T and performance measure P, if its performance at tasks in
+T, as measured by P, improves with experience E
+
+three features: the class of tasks, the measure of performance to be improved, and
+the source of experience
+1 A checkers learning problem:
+	Task T: playing checkers
+	Performance measure P: percent of games won against opponents
+	Training experience E: playing practice games against itself
+
+2 A handwriting recognition learning problem:
+	Task T: recognizing and classifying handwritten words within images
+	Performance measure P: percent of words correctly classified
+	Training experience E: a database of handwritten words with given classifications
+3 A robot driving learning problem:
+	Task T: driving on public four-lane highways using vision sensors
+	Performance measure P: average distance traveled before an error (as judged by human overseer)
+	Training experience E: a sequence of images and steering commands recorded while observing a human driver.
+
+CANDIDATE-ELIMINATion algorithm using version spaces Notice the duality in how positive and
+negative examples influence S and G
+Initialize G to the set of maximally general hypotheses in H
+Initialize S to the set of maximally specific hypotheses in H
+For each training example d, do
+  If d is a positive example
+Remove from G any hypothesis inconsistent with d ,
+  For each hypothesis s in S that is not consistent with d ,-
+    Remove s from S
+        Add to S all minimal generalizations h of s such that
+	h is consistent with d, and some member of G is more general than h
+	Remove from S any hypothesis that is more general than another hypothesis in S
+If d is a negative example
+	Remove from S any hypothesis inconsistent with d
+	For each hypothesis g in G that is not consistent with d
+	  Remove g from G
+	  Add to G all minimal specializations h of g such that
+	  h is consistent with d, and some member of S is more specific than h
+	Remove from G any hypothesis that is less general than another hypothesis in G.
+
+
+A star algorithm
+
+ID3(Examples, Targetattribute, Attributes)
+Examples are the training examples. Targetattribute is the attribute whose value is to be
+predicted by the tree. Attributes is a list of other attributes that may be tested by the learned
+decision tree. Returns a decision tree that correctly classiJies the given Examples
+
+Create a Root node for the tree
+I f all Examples are positive, Return the single-node tree Root, with label = +
+I f all Examples are negative, Return the single-node tree Root, with label = -
+If Attributes is empty, Return the single-node tree Root, with label = most common value of
+Targetattribute in Examples
+Otherwise Begin
+A t the attribute from Attributes that best* classifies Examples
+0 The decision attribute for Root c A
+For each possible value, vi, of A,
+Add a new tree branch below Root, corresponding to the test A = vi
+0 Let Examples,, be the subset of Examples that have value vi for A
+If Examples,, is empty
+Then below this new branch add a leaf node with label = most common
+value of Target attribute in Examples
+Else below this new branch add the subtree
+ID3(Examples,,, Targetattribute, Attributes - (A)))
+End
+Return Root
+
